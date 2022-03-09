@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<main class="h-screen overflow-y-auto">
+  <div class="px-6 py-20 w-full lg:w-[580px] mx-auto prose dark:prose-invert h-fit prose-img:mx-auto">
+    {{ .Content }}
+  </div>
+  <input type="hidden" name="formConfig" value="{{ .Site.Params.twitter }}">
+<input type="hidden" name="uuid" value="{{ .Site.Params.uuid }}">
+<input type="hidden" name="uuid_name" value="{{ .Site.Params.uuid_name }}">
+<input type="hidden" name="recaptcha_sitekey" value="{{ .Site.Params.recaptcha_sitekey }}">
+<input type="hidden" name="i18n_data" value="{{ .Site.Params.i18n_data }}">
+    <div id="form">
+      <script type="text/javascript" src="{{ "js/middleware.js" | absURL }}"></script>
+</main>
+
+{{ end }}

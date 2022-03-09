@@ -1,0 +1,49 @@
+.formcontainer {    
+    margin: 0 auto;
+}
+.padding-tb-20 {
+    padding: 20px 0;
+}
+#logo{
+    height: 60px;
+    width: 200px;
+    margin: 0px;
+}
+#form{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.odd{
+    background-color: 'transparent';
+  }
+:root {
+    --color-background-primary: #ffffff;
+    --color-text-primary: #000000;
+    --font-body: 'Times New Roman';
+}
+body {
+    background-color: var(--color-background-primary);
+    font-family: var(--font-body);
+    color: var(--color-text-primary);
+  }
+  .nav {
+    background-color: var(--color-background-primary);
+ }
+a {
+    color: var(--color-text-primary);
+}
+h1{
+    color: var(--color-text-primary)!important;
+}
+ /* Theme specific css  */
+ #form
+ {
+     display: block;
+ }
+ .py-20 {
+    padding-bottom: 1rem;
+}
+svg {
+    display: initial;
+}
