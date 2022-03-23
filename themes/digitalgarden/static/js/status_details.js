@@ -1,7 +1,7 @@
 (function($){
 
   const urlParams = new URLSearchParams(window.location.search);
-  const id = document.querySelector("input[name=dsr_req_id]").value //urlParams.get("id");
+  const id = urlParams.get("id");
   const tableHeaderKeyMap = [
       {
           'label': 'First Name',

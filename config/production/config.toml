@@ -1,4 +1,4 @@
-baseURL = 'https://app.pii.ai/'
+baseURL = 'https://dsrp.dev.pii.ai/themes/digital-garden/'
 languageCode = 'en-us'
 title = 'PieEye'
 theme = 'digitalgarden'

@@ -1,49 +1,94 @@
-.formcontainer {    
+.formcontainer {
     margin: 0 auto;
 }
+
 .padding-tb-20 {
     padding: 20px 0;
 }
-#logo{
+
+#logo {
     height: 60px;
-    width: 200px;
     margin: 0px;
 }
-#form{
+
+#form {
     max-width: 1140px;
     margin-right: auto;
     margin-left: auto;
 }
-.odd{
+
+.odd {
     background-color: 'transparent';
-  }
+}
+
 :root {
     --color-background-primary: #ffffff;
     --color-text-primary: #000000;
     --font-body: 'Times New Roman';
 }
+
 body {
     background-color: var(--color-background-primary);
     font-family: var(--font-body);
     color: var(--color-text-primary);
-  }
-  .nav {
+}
+
+.nav {
     background-color: var(--color-background-primary);
- }
+}
+
 a {
     color: var(--color-text-primary);
 }
-h1{
+
+h1 {
     color: var(--color-text-primary)!important;
 }
- /* Theme specific css  */
- #form
- {
-     display: block;
- }
- .py-20 {
+
+
+/* Theme specific css  */
+
+#form {
+    display: block;
+}
+
+.py-20 {
     padding-bottom: 1rem;
 }
+
 svg {
     display: initial;
+}
+
+a:link {
+    color: var(--color-text-primary);
+    opacity: 0.75;
+}
+
+a:active,
+a:hover,
+a:visited {
+    color: var(--color-text-primary);
+    opacity: 1;
+}
+
+.border {
+    border-color: rgba(0, 0, 0, 0.1)!important;
+}
+
+.ql-align-center {
+    text-align: center;
+}
+
+.ql-align-right {
+    text-align: right;
+}
+
+.ql-align-left {
+    text-align: left;
+}
+
+button.btn.btn-primary.btn-md {
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
 }

@@ -9,9 +9,11 @@
       if (id) {
         form.getComponent('dsrid').setValue(id);
       }
-  
+      const XAPIKEY = 'J8s1iLFZCS4bQeJB8U5On7li4b4usbXLaCAlAFuI';
+      const PIIAIKEY = 'eyJ0eXBlIjoiSldUIiwia2lkIjoiVWdNVk1uSUhBRGVqYVRPUEhaa3VzZ0YwMXFfVkNZbW95eGtld2l1Nml5USIsImFsZyI6IlJTMjU2In0.eyJ0ZW5hbnQiOiIxIiwid29ya3NwYWNlIjoiOTZlNTRkMGMtOGMxNS00ODdiLWJmODEtYTVkMjkwZmM0YjdjIiwiaXNzIjoiaHR0cHM6Ly9hcHAuZGV2LnBpaS5haS9wdWJsaWMvMSIsImF1ZCI6Imh0dHBzOi8vZHNycC1hcGkuZGV2LnBpaS5haSIsInN1YiI6ImRhM2U4OTc3LWI2ZjAtNGM5OC05ZjExLTQzMTU0OWY4Yjc2MyIsImp0aSI6IllPVXY2eFhXd0tKeXdhYTN2T0dfVkEiLCJpYXQiOjE2NDY5MTc4OTN9.CwV8YRikOjLylLp1Gc55FtN4PNYJEWWKrMsmQZFAjfHbf6rALcyGUKSr6iCxzXcR7Y5teLrAG2v5mbAft5N9PIO8z9UJgbOaepN8zowUWznxeehx9e0kI3l_xrEC2nauPQ6mqQcGO8b8XGEHW3pG-d_HzNLp8s602TOTeMB97xj84V8z9Oo6de7-l5iETlDy-SaiobPAKMHdkbKpkMaUZC1cfUdY9jRs23YLqZ_JRJV8sXOpB9LO1uU2ixXQuUz54FQVtiuoicTZIUig9Y9Vtc7AKUhM9g6U8IQM55DJrSI_8W0FEMljThrNRFBiyLlnLutzpYcf0EAtIfvqgoJsjw';
+      const dsrpId = 'da3e8977-b6f0-4c98-9f11-431549f8b763';
       // Triggered when they click the submit button.
-     /* form.on("submit", (submission) => {
+      form.on("submit", (submission) => {
         var url = 'https://dsrp-api.dev.pii.ai/p/' + dsrpId + '/dsr/' + submission.data.dsrid;
         var fetchOptions = {
           method: 'POST',
@@ -48,9 +50,9 @@
                 document.getElementById("statusicon").classList.add("fa-check-square");
                 document.getElementById("statusicon").style.color = "green";
               } else if (resultJSON.status === "Rejected") {
-                window.location = "dsrrejection.html?id=" + submission.data.dsrid;
+                window.location = "../status-detail-page?id=" + submission.data.dsrid;
               } else if (resultJSON.status === "Completed") {
-                window.location = "dsrreport.html?id=" + submission.data.dsrid;
+                window.location = "../status-detail-page?id=" + submission.data.dsrid;
                 localStorage.setItem(submission.data.dsrid, JSON.stringify(resultJSON.data))
               } else {
                 document.getElementById('resultstatus').style.color = "red";
@@ -67,7 +69,7 @@
           document.getElementById("statusicon").style.color = "red";
           form.submission = {}
         });
-      }); */
+      });
       return form;
     }
   
